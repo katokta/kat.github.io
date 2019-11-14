@@ -1,0 +1,253 @@
+/*INDEX STYLESHEET*/
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+	margin: 0;
+}
+
+header{
+	padding: 0px 0;
+}
+
+.fwh-slide {
+  padding: 100px 0;
+}
+
+.fwh-slide h1.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+
+.fwh-slide{
+	height: auto;
+	box-sizing: border-box;
+}
+
+
+/*.fwh-slide .container .jumbotron{
+  margin-bottom: 100px !important;
+}*/
+nav{
+	height: auto;
+}
+
+#mainNav {
+  background-color: #212529;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #fed136;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-brand {
+  color: #fed136;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #fec503;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #fed136;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/*SCHEDULE STYLESHEET*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+#schedule{
+	padding:100px 0;
+}
+
+.panel .img-thumbnail {
+	height:300px;
+	width:300px;
+}
+
+.fwh-slide #personnel #split p{
+	border-right-style: solid;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  padding-bottom: 15px;
+}
+
+#About p{
+	padding-bottom: 30px;
+}
+
+#About{
+	padding-bottom: 200px;
+	background-color: #FFD9C2;
+}
+
+#Achievements{
+	background-color: #FFC3A0 ;
+}
+
+#Packages{
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 45%, rgba(244,108,108,1) 100%); ;
+}
+
+#footer{
+	background-color: #CC9C80;
+}
+
+.navbar-brand img{
+	width:120px;
+	height:auto;
+}
+
+.col-md-3 img{
+	width:80%;
+	height:80%;
+}
+
+hr{
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+
+/*achieements*/
+section #Achievements {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+#Achievements .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+#Achievements hr {
+  margin: 1.5rem 0;
+}
+
+#Achievements .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+#Achievements .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#Achievements .card-price .period {
+  font-size: 0.8rem;
+}
+
+#Achievements ul li {
+  margin-bottom: 1rem;
+}
+
+#Achievements .text-muted {
+  opacity: 0.7;
+}
+
+#Achievements .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  #Achievements .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  #Achievements .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+/*.jumbotron{
+	margin-bottom:100px;
+}*/
+
+body{
+	overflow-x:hidden;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
