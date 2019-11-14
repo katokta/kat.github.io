@@ -15,7 +15,7 @@ body{
 }
 
 header{
-	padding: 50px 0;
+	padding: 0px 0;
 }
 
 .fwh-slide {
@@ -32,6 +32,10 @@ header{
 .fwh-slide{
 	height: 100vh;
 	box-sizing: border-box;
+}
+
+nav{
+	height: auto;
 }
 
 #mainNav {
@@ -132,4 +136,114 @@ h1, h2, h3, h4, h5, h6,
 
 #About p{
 	padding-bottom: 30px;
+}
+
+#About{
+	padding-bottom: 200px;
+	background-color: #FFD9C2;
+}
+
+#Achievements{
+	background-color: #FFC3A0 ;
+}
+
+#Packages{
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 45%, rgba(244,108,108,1) 100%); ;
+}
+
+#footer{
+	background-color: #CC9C80;
+}
+
+.navbar-brand img{
+	width:120px;
+	height:auto;
+}
+
+.col-md-3 img{
+	width:80%;
+	height:80%;
+}
+
+hr{
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+
+/*achieements*/
+section #Achievements {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+#Achievements .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+#Achievements hr {
+  margin: 1.5rem 0;
+}
+
+#Achievements .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+#Achievements .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#Achievements .card-price .period {
+  font-size: 0.8rem;
+}
+
+#Achievements ul li {
+  margin-bottom: 1rem;
+}
+
+#Achievements .text-muted {
+  opacity: 0.7;
+}
+
+#Achievements .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  #Achievements .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  #Achievements .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+/*.jumbotron{
+	margin-bottom:100px;
+}*/
+
+body{
+	overflow-x:hidden;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
 }
