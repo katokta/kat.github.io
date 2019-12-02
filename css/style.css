@@ -1,5 +1,17 @@
 /*INDEX STYLESHEET*/
 
+*{
+	box-sizing: border-box;
+}
+
+p{
+	font-family: 'Baskervville', serif;
+}
+
+/*h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: "Audrey";
+}*/
+
 .carousel-item {
   height: 100vh;
   min-height: 350px;
@@ -30,19 +42,18 @@ header{
 }
 
 .fwh-slide{
-	height: 100vh;
+	height: 100%;
 	box-sizing: border-box;
 }
 
 nav{
 	height: auto;
+	font-weight: bold;
+	font-size:0.9rem;
 }
 
-#mainNav {
-  background-color: #212529;
-}
 
-#mainNav .navbar-toggler {
+.navbar-toggler {
   font-size: 12px;
   right: 0;
   padding: 13px;
@@ -53,31 +64,59 @@ nav{
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #fec503;
 }
 
+.navbar-nav .nav-item{
+	padding-right: 5px;
+	font-size: 0.9rem;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 50%;
   font-weight: 400;
-  padding: 0.75em 0;
+  padding: 1em 0;
   letter-spacing: 1px;
   color: white;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+@media (min-width: 947.25px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+    height: 100%;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 100%;
+    padding: 12px 0;
+  }
 }
+
+#nav .navbar-nav .nav-item .nav-link.active{
+	color:white;
+}
+
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #CC9C80;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -85,6 +124,7 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  font-weight: bolder;
 }
 
 button:hover {
@@ -125,10 +165,6 @@ button:hover {
 	width:300px;
 }
 
-.fwh-slide #personnel #split p{
-	border-right-style: solid;
-}
-
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   padding-bottom: 15px;
@@ -140,20 +176,23 @@ h1, h2, h3, h4, h5, h6,
 
 #About{
 	padding-bottom: 200px;
-	background-color: #FFD9C2;
+	background-color: #FFFFFF;
 }
 
 #Achievements{
 	background-color: #FFC3A0 ;
+	overflow:hidden;
 }
 
 #Packages{
 	background: rgb(255,255,255);
-	background: linear-gradient(180deg, rgba(255,255,255,1) 45%, rgba(244,108,108,1) 100%); ;
+	background: linear-gradient(180deg, rgba(255,255,255,1) 45%, rgba(244,108,108,1) 100%); 
+	height: 100vh;
 }
 
 #footer{
 	background-color: #CC9C80;
+	padding-bottom: 100px;
 }
 
 .navbar-brand img{
@@ -175,6 +214,7 @@ hr{
 section #Achievements {
   background: #007bff;
   background: linear-gradient(to right, #0062E6, #33AEFF);
+  overflow:scroll;
 }
 
 #Achievements .card {
@@ -206,6 +246,7 @@ section #Achievements {
 
 #Achievements ul li {
   margin-bottom: 1rem;
+  list-style: none;
 }
 
 #Achievements .text-muted {
@@ -246,4 +287,81 @@ body{
 .row{
 	display: flex;
 	flex-wrap: wrap;
+}
+
+#Book-now{
+	background: url("../img/book-bg-01.png") 100% 100%;
+	background-position: center;
+	background-size: cover;
+	height:100vh;
+}
+
+#separator{
+	position: relative;
+	min-height: 150px;
+}
+
+.blocks-list{
+	list-style: none;
+}
+
+.blocks-item {
+    border: 1px solid rgba(23, 157, 181, 1);
+	border-radius: 4px;
+	box-sizing: border-box;
+	/*color: rgba(23, 157, 181, 1);*/
+	display: flex;
+	flex: 1 0 340px;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 30px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.col-md-3 .head{
+	color: black;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.col-md-3 a{
+	color: black;
+}
+
+.col-md-3 p{
+	margin-bottom: 5px;
+}
+
+.display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    border-style: solid;
+    border-width: 3px 0 3px 0;
+    border-color: #d9d9d9;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.lead{
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.col-md-3 a:hover{
+	text-decoration: none;
+	color: white;
+	transition: all ease-in-out 0.75s;
+}
+
+#schedule a{
+	color:gray;
+}
+
+#schedule a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+#schedule .desc{
+	padding-bottom: 20px;
 }

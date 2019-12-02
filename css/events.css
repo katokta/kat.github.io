@@ -1,3 +1,30 @@
 #viewer{
 	padding: 100px 0;
 }
+
+.table thead{
+    background: #f3f3f3;
+    color: #333;
+}
+
+.table a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.table a:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nav.nav-tabs a{
+	text-decoration: none;
+	color: black;
+}
+
+.nav.nav-tabs a:hover{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
